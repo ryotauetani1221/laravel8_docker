@@ -1,5 +1,10 @@
 # READ ME
 
-参考元：
-https://dev.to/jackmiras/laravel-with-php7-4-in-an-alpine-container-3jk6#defining-image-bases
+# Build your docker image
+# syntax: docker build -t <image-tag> <dockerfile-location>
+docker build -t app:latest .
 
+# If you want to test your local image
+docker run -d -p 80:80 app:latest
+
+# once you run above command go to http://localhost
